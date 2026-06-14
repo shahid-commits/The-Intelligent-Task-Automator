@@ -60,34 +60,44 @@ The-Intelligent-Task-Automator/
 
 **1. Clone the repo**
 
+```bash
 git clone https://github.com/shahid-commits/The-Intelligent-Task-Automator
-
 cd The-Intelligent-Task-Automator
+```
 
 **2. Create and activate virtual environment**
 
+```bash
 python -m venv venv
-
 venv\Scripts\activate
+```
 
 **3. Install dependencies**
 
+```bash
 pip install -r requirements.txt
+```
 
 **4. Get a free Groq API key**
 
+```bash
 Sign up at [console.groq.com](https://console.groq.com) — free tier, no credit card needed.
+```
 
 **5. Create your `.env` file**
 
+```bash
 GROQ_API_KEY=your_key_here
+```
 
 **6. Run the watcher**
 
+```bash
 python main.py
+```
 
 ## Usage
-
+```text
 Once running, drop any PDF into `invoices/inbox/`. The terminal shows:
 
 New invoice detected: food invoice march.pdf
@@ -96,9 +106,11 @@ Moved: food_2026-06-14_food_invoice_march.pdf → Food/
 Logged: food | food_2026-06-14_food_invoice_march.pdf
 
 Press `Ctrl+C` to stop.
+```
 
 ## How it works
 
+```text
 watchdog detects new PDF
         ↓
 pdfplumber extracts text (first 2 pages, max 1500 chars)
@@ -110,6 +122,7 @@ File renamed: category_date_originalname.pdf
 shutil moves file to category folder
         ↓
 Action logged to sorting_log.txt
+```
 
 ---
 
