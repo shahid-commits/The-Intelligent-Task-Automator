@@ -4,8 +4,3 @@ __pycache__/
 *.pyc
 .vscode/
 invoices/sorting_log.txt
-invoices/Electricity/
-invoices/Food/
-invoices/Rent/
-invoices/Internet/
-invoices/Miscellaneous/
