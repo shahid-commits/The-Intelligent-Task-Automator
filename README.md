@@ -7,11 +7,11 @@ A Python automation tool that watches a folder for PDF invoices, reads their con
 Drop any PDF invoice into the `invoices/inbox/` folder. The tool detects it instantly, extracts the text, sends it to an AI model, and moves the renamed file into the right category folder automatically.
 
 -------------------------------------------------------------------------------------------------------------
-
+```text
 invoices/inbox/march electricity bill.pdf
                 ↓
 invoices/Electricity/electricity_2026-06-14_march_electricity_bill.pdf
-
+```
 -------------------------------------------------------------------------------------------------------------
 
 ## Features
@@ -26,6 +26,7 @@ invoices/Electricity/electricity_2026-06-14_march_electricity_bill.pdf
 
 ## Project structure
 
+```text
 The-Intelligent-Task-Automator/
 │
 ├── config.py          # constants, paths, folder setup
@@ -44,6 +45,7 @@ The-Intelligent-Task-Automator/
 ├── Rent/
 ├── Internet/
 └── Miscellaneous/
+```
 
 ## Tech stack
 
